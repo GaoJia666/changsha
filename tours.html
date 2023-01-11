@@ -30,6 +30,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+					<img src="img/logo.png" style="height: 40px;width: 50px;" class="logo_img" alt="">
 					<a href="#" class="tm-site-name">China-Changsha Tourism Online</a>
 				</div>
 				<div class="col-lg-6 col-md-8 col-sm-9">
@@ -243,7 +244,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Aiwan Pavilion</p>
-								<p class="gray-text">28 March 2084</p>
+								<!-- <p class="gray-text">28 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">“Stop and sit in the maple forest at night, frost leaves red than February flowers".</p>
@@ -265,7 +266,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Hunan University</p>
-								<p class="gray-text">26 March 2084</p>
+								<!-- <p class="gray-text">26 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">Famous university in China, selected as 985 and 211 project</p>
@@ -287,7 +288,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Fire Palace</p>
-								<p class="gray-text">24 March 2084</p>
+								<!-- <p class="gray-text">24 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">Fire temple culture, food culture in representative public places.</p>
@@ -309,7 +310,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Jia Yi's former residence</p>
-								<p class="gray-text">22 March 2084</p>
+								<!-- <p class="gray-text">22 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">The residence of Jia Yi, the King of Changsha,famous old buildings.  </p>
@@ -331,7 +332,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">JU  ZI ZHOU TOU</p>
-								<p class="gray-text">28 March 2084</p>
+								<!-- <p class="gray-text">28 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">There is Mao Zedong Youth Art Sculpture. </p>
@@ -353,7 +354,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Window to the World</p>
-								<p class="gray-text">26 March 2084</p>
+								<!-- <p class="gray-text">26 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">A miniature view of world famous architecture</p>
@@ -375,7 +376,7 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Tianxin Pavilion</p>
-								<p class="gray-text">24 March 2084</p>
+								<!-- <p class="gray-text">24 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
 								<p class="gray-text tours-1-description">The Tianxin Pavilion and the ancient city wall of Changsha are the main attractions.</p>
@@ -397,10 +398,10 @@
 						<div class="tm-tours-box-1-info">
 							<div class="tm-tours-box-1-info-left">
 								<p class="text-uppercase margin-bottom-20">Yuelu Academy</p>
-								<p class="gray-text">22 March 2084</p>
+								<!-- <p class="gray-text">22 March 2084</p> -->
 							</div>
 							<div class="tm-tours-box-1-info-right">
-								<p class="gray-text tours-1-description">One of the four famous academies in Chinese history, located at  Mount Yuelu.</p>
+								<p class="gray-text tours-1-description">One of the four famous academies in China history, located at  Mount Yuelu.</p>
 							</div>
 						</div>
 						<div class="tm-tours-box-1-link">
@@ -503,25 +504,25 @@
 	<script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
 	<script>
 		// HTML document is loaded. DOM is ready.
-		￥(function () {
+		$(function () {
 
-			￥('#hotelCarTabs a').click(function (e) {
+			$('#hotelCarTabs a').click(function (e) {
 				e.preventDefault()
-				￥(this).tab('show')
+				$(this).tab('show')
 			})
 
-			￥('.date').datetimepicker({
+			$('.date').datetimepicker({
 				format: 'MM/DD/YYYY'
 			});
-			￥('.date-time').datetimepicker();
+			$('.date-time').datetimepicker();
 
 			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
-			￥('a[href*=#]:not([href=#])').click(function () {
+			$('a[href*=#]:not([href=#])').click(function () {
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-					var target = ￥(this.hash);
-					target = target.length ? target : ￥('[name=' + this.hash.slice(1) + ']');
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 					if (target.length) {
-						￥('html,body').animate({
+						$('html,body').animate({
 							scrollTop: target.offset().top
 						}, 1000);
 						return false;
@@ -531,8 +532,8 @@
 		});
 
 		// Load Flexslider when everything is loaded.
-		￥(window).load(function () {
-			￥('.flexslider').flexslider({
+		$(window).load(function () {
+			$('.flexslider').flexslider({
 				controlNav: false
 			});
 		});
